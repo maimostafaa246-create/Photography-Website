@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    width: 75%;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+.text-content p {
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    line-height: 1.8;
+    color: #666;
+    margin: 0 0 22px 0;
+}
+
+@media (max-width: 768px) {
+
+    .hero2 .text-content {
+        width: 90%;
+        margin: auto;
+    }
+
+    .hero2 p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .image-container {
+        height: 350px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    .button {
+        font-size: 9px;
+        padding: 5px 12px;
+    }
+
+    .h {
+        font-size: 12px;
+    }
+}

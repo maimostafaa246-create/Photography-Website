@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Styling Section & Container */
+.hero7 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    color: #333;
+}
+
+.comments h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+/* Reset Blockquote default styles */
+.comments blockquote {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Styling Individual Comments */
+.comments .brandon,
+.comments .mia,
+.comments .Mike {
+    position: relative;
+    padding-left: 30px;
+    border-left: 1px solid #e5e5e5;
+    margin-bottom: 35px;
+}
+
+/* Sub-comments Indentation (Mia) */
+.comments .mia {
+    margin-left: 80px;
+}
+
+/* Date Styling */
+.comments p:first-child {
+    font-size: 12px;
+    color: #ccc;
+    letter-spacing: 1.5px;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.comments p:first-child:hover{
+    color:#ff5c64;
+}
+
+/* Author Name Styling */
+.comments h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #111;
+}
+
+/* Comment Content Body */
+.comments p:nth-of-type(2) {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0 0 15px 0;
+}
+
+/* Buttons Styling */
+.comments button {
+    background-color: #fff;
+    border: 1px solid #eee;
+    color: #111;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.comments button:hover {
+    border-color: #ff5c64;
+    background-color: #f9f9f9;
+}
+
+.comments button:focus {
+    background-color: #ff5c64; /* ثبات اللون البرتقالي */
+    color: #fff;
+    border-color: #ff5c64;
+}
+
+@media (max-width: 768px) {
+
+    .hero7 .comments {
+        width: 90%;
+        margin: auto;
+    }
+
+    .hero7 .comment1,
+    .hero7 .comment2 {
+        display: block;
+    }
+}
+@media (max-width: 576px) {
+
+    .image-container {
+        height: 350px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    .button {
+        font-size: 9px;
+        padding: 5px 12px;
+    }
+
+    .h {
+        font-size: 12px;
+    }
+}
+

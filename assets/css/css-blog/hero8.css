@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment-form-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.comment-form-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 25px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* الصف الأول يحتوي على الحقلين بجانب بعضهما */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-input {
+    flex: 1;
+}
+
+/* تنسيق الخانات العامة */
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #eee;
+    border-radius: 0;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #888;
+}
+
+/* التنسيق أثناء التركيز أوالضغط (Focus) للون الأحمر الموضح */
+.form-input:focus,
+.form-textarea:focus,
+.active-field {
+    border-color: #ff6b6b;
+    /* اللون الأحمر الوردي الموضح في الحقل الأول */
+}
+
+/* منطقة نص الرسالة */
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* زر الإرسال */
+.send-btn {
+    align-self: flex-start;
+    background-color: #fff;
+    color: #111;
+    border: 1.5px solid #ff6b6b;
+    border-radius: 25px;
+    /* الحواف الدائرية للزر */
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 5px;
+}
+
+.send-btn:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.titleh2{
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+}
+
+.titlep{
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width: 576px) {
+
+    .hero8 .form-row {
+        flex-direction: column;
+    }
+
+    .hero8 .form-input,
+    .hero8 .form-textarea {
+        width: 100%;
+    }
+
+    .hero8 .comment-form-section {
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width: 576px) {
+
+    .image-container {
+        height: 350px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    .button {
+        font-size: 9px;
+        padding: 5px 12px;
+    }
+
+    .h {
+        font-size: 12px;
+    }
+}

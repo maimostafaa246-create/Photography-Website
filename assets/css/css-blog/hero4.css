@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    width: 75%;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+.text-content p {
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    line-height: 1.8;
+    color: #666;
+    margin: 0 0 22px 0;
+}
+
+.redblock {
+    border-left: 3px solid #ff5a5f;
+    padding: 5px 0 5px 30px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+blockquote span {
+    display: block;
+    margin-top: 20px;
+    color: #ff5a5f;
+    font-weight: bold;
+}
+
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 8%;
+}
+
+/* الأزرار اللي على الشمال */
+.tags {
+    display: flex;
+    gap: 6px;
+    
+}
+
+.tags span {
+    background-color: #eeeeee;
+    color: #666;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    padding: 9px 16px;
+
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.tags span:hover{
+    background-color: #ff5a5f;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.share span {
+    font-size: 16px;
+    color: #333;
+    margin-right: 5px;
+}
+
+.share a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.share a:hover {
+    color: #ff5a5f;
+}
+
+@media (max-width: 768px) {
+
+    .hero4 .text-content {
+        width: 90%;
+        margin: auto;
+    }
+
+    .hero4 p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .redblock {
+        width: 100%;
+        margin: 30px 0;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .image-container {
+        height: 350px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    .button {
+        font-size: 9px;
+        padding: 5px 12px;
+    }
+
+    .h {
+        font-size: 12px;
+    }
+}

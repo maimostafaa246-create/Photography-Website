@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Gallery | Alime Photography</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Bootstrap 5 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+<!-- Site styles -->
+<link rel="stylesheet" href="assets/css/main 2.css">
+<link rel="stylesheet" href="assets/css/gallery2.css">
+
+<!-- icon -->
+ <link rel="icon" type="image/x-icon" href="assets/img/core-img/favicon.png">
+</head>
+<body>
+
+    <!--nav bar code  -->
+<nav class="my-nav"  >
+   <div class="main-icon">
+<img src="assets/img/core-img/logo.png">
+   </div>
+
+   <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">FAQ</a>
+    <a href="blog.html">Blog</a>
+
+
+    </div>
+
+<button class="menu-toggle" aria-label="Open menu">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+<i class="search-icon fa-solid fa-magnifying-glass"></i>
+
+
+</nav>
+<!-- end of navigation bar -->
+<!-- ===== PAGE HEADER / BREADCRUMB ===== -->
+<section class="page-header" style="background-image: url('https://picsum.photos/id/1039/1600/700');">
+    <div class="container-main">
+        <div class="page-header-content">
+            <span class="page-eyebrow">Portfolio</span>
+            <h1>Gallery</h1>
+            <ul class="breadcrumb-list">
+                <li><a href="home.html">Home</a></li>
+                <li>/</li>
+                <li class="current">Gallery</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery-section">
+    <div class="container-main">
+
+        <div class="text-center-block">
+            <span class="section-eyebrow" style="margin-left:auto;margin-right:auto;">My Work</span>
+            <h2 class="section-title">Recent Shots</h2>
+            <p class="section-desc">A collection of moments captured through instinct rather than formula &mdash; browse by category or view the full set below.</p>
+        </div>
+
+        <!-- Filters -->
+        <ul class="filter-menu" id="filterMenu">
+            <li class="filter-btn active" data-filter="all">All</li>
+            <li class="filter-btn" data-filter="human">Human</li>
+            <li class="filter-btn" data-filter="nature">Nature</li>
+            <li class="filter-btn" data-filter="country">Country</li>
+            <li class="filter-btn" data-filter="video">Video</li>
+        </ul>
+
+        <!-- Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+
+            <div class="gallery-item" data-category="human">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/1.jpg" data-title="">
+                    <img src="assets/img/bg-img/1.jpg"alt="">
+                    <span class="gallery-overlay"><i class="bi bi-plus-lg"></i></span>
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/2.jpg" data-title="">
+                    <img src="assets/img/bg-img/2.jpg" alt="">
+                    <span class="gallery-overlay"><i class="bi bi-plus-lg"></i></span>
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="country">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/3.jpg" data-title="">
+                    <img src="assets/img/bg-img/3.jpg" alt="">
+                    <span class="gallery-overlay"><i class="bi bi-plus-lg"></i></span>
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="human">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/4.jpg" data-title="">
+                    <img src="assets/img/bg-img/4.jpg" alt="">
+                    <span class="gallery-overlay"><i class="bi bi-plus-lg"></i></span>
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="video">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/5.jpg" data-title="">
+                    <img src="assets/img/bg-img/5.jpg" alt="">
+                    <span class="gallery-overlay"><i class="bi bi-play-fill"></i></span>
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/6.jpg" data-title="">
+                    <img src="assets/img/bg-img/6.jpg" alt="">
+                    <span class="gallery-overlay"><i class="bi bi-plus-lg"></i></span>
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="country">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/7.jpg" data-title="">
+                    <img src="assets/img/bg-img/7.jpg" alt="">
+                    <span class="gallery-overlay"><i class="bi bi-plus-lg"></i></span>
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="human">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/8.jpg" data-title="">
+                    <img src="assets/img/bg-img/8.jpg" alt="">
+                    <span class="gallery-overlay"><i class="bi bi-plus-lg"></i></span>
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/9.jpg" data-title="">
+                    <img src="assets/img/bg-img/9.jpg"alt="">
+                    <span class="gallery-overlay"><i class="bi bi-plus-lg"></i></span>
+                </a>
+            </div>
+
+            <!-- Hidden until "View More" is clicked -->
+            <div class="gallery-item is-hidden" data-category="country">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/10.jpg" data-title="">
+                    <img src="assets/img/bg-img/10.jpg"alt="">
+                    <span class="gallery-overlay"><i class="bi bi-plus-lg"></i></span>
+                </a>
+            </div>
+
+            <div class="gallery-item is-hidden" data-category="video">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/11.jpg" data-title="">
+                    <img src="assets/img/bg-img/11.jpg" alt="">
+                    <span class="gallery-overlay"><i class="bi bi-play-fill"></i></span>
+                </a>
+            </div>
+
+            <div class="gallery-item is-hidden" data-category="human">
+                <a href="#" class="gallery-link" data-img="assets/img/bg-img/12.jpg" data-title="">
+                    <img src="assets/img/bg-img/12.jpg" alt="">
+                    <span class="gallery-overlay"><i class="bi bi-plus-lg"></i></span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="text-center-block" style="margin-top:50px;margin-bottom:0;">
+            <button class="btn-outline" id="viewMoreBtn">View More</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== INSTAGRAM STRIP ===== -->
+<section class="instagram-strip">
+    <div class="insta-heading">
+        <span class="section-eyebrow">Follow Instagram</span>
+        <h3>@Alime_photographer</h3>
+    </div>
+    <div class="insta-marquee">
+        <div class="insta-track">
+            <a href="#"><img src="assets/img/bg-img/13.jpg" alt="Instagram post"></a>
+            <a href="#"><img src="assets/img/bg-img/14.jpg" alt="Instagram post"></a>
+            <a href="#"><img src="assets/img/bg-img/15.jpg" alt="Instagram post"></a>
+            <a href="#"><img src="assets/img/bg-img/16.jpg" alt="Instagram post"></a>
+            <a href="#"><img src="assets/img/bg-img/17.jpg" alt="Instagram post"></a>
+            <a href="#"><img src="assets/img/bg-img/18.jpg" alt="Instagram post"></a>
+            <!-- duplicated set so the loop is seamless -->
+            <a href="#"><img src="assets/img/bg-img/19.jpg" alt="Instagram post"></a>
+            <a href="#"><img src="assets/img/bg-img/20.jpg" alt="Instagram post"></a>
+            <a href="#"><img src="assets/img/bg-img/21.jpg" alt="Instagram post"></a>
+            <a href="#"><img src="assets/img/bg-img/22.jpg" alt="Instagram post"></a>
+            <a href="#"><img src="assets/img/bg-img/23.jpg" alt="Instagram post"></a>
+            <a href="#"><img src="assets/img/bg-img/24.jpg" alt="Instagram post"></a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+    <button class="lightbox-close" id="lightboxClose"><i class="bi bi-x-lg"></i></button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="bi bi-chevron-left"></i></button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="bi bi-chevron-right"></i></button>
+    <button class="lightbox-scrolltop" id="lightboxScrollTop"><i class="bi bi-chevron-up"></i></button>
+    <figure class="lightbox-figure">
+        <img src="assets/img/bg-img/25.jpg" alt="" id="lightboxImg">
+        <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" id="contact">
+    <div class="container-main">
+        <div class="row gy-5">
+            <div class="col-lg-4 col-md-6">
+                <a href="index.html" class="footer-brand"><img src="assets/img/core-img/logo.png" alt="icon"></a>
+                <p>I photograph very instinctively &mdash; I see how it is taken like that. I do not follow certain styles, philosophies or teachers.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 offset-lg-1">
+                <h5>Explore</h5>
+                <ul class="footer-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Services</h5>
+                <ul class="footer-links">
+                    <li><a href="services.html">Wedding Photography</a></li>
+                    <li><a href="services.html">Portrait Sessions</a></li>
+                    <li><a href="services.html">Film Photography</a></li>
+                    <li><a href="services.html">Nature Photography</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5>Get In Touch</h5>
+                <ul class="footer-contact">
+                    <li><i class="bi bi-geo-alt"></i><span>Broome St, NY 10002, USA</span></li>
+                    <li><i class="bi bi-envelope"></i><span>hello.alime@gmail.com</span></li>
+                    <li><i class="bi bi-telephone"></i><span>+1 234 567 8901</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Copyright &copy; <span id="year"></span> Alime. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

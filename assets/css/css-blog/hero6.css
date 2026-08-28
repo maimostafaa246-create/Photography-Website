@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* =========================
+   Recommended Section
+========================= */
+
+.hero6 {
+    width: 90%;
+    max-width: 1120px;
+    margin: 50px auto;
+}
+
+.recommended-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #292929;
+}
+
+
+/* Cards Grid */
+
+.recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+/* Card */
+
+.recommended-card {
+    position: relative;
+    height: 372px;
+    overflow: hidden;
+    background: #000;
+}
+
+
+/* Image */
+
+.recommended-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Dark overlay */
+
+.recommended-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+
+/* Category */
+
+.recommended-category {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background: #ff5c64;
+    color: white;
+
+    padding: 6px 15px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+
+.recommended-category:hover{
+    background-color: #292929;
+}
+
+
+/* Bottom content */
+
+.recommended-content {
+    position: absolute;
+    left: 30px;
+    right: 15px;
+    bottom: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.recommended-content h3:hover{
+    color:#ff5c64;
+}
+
+.recommended-content:hover{
+    color:#ff5c64;
+}
+
+/* Date + comments */
+
+.recommended-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+
+/* Card title */
+
+.recommended-content h3 {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 700;
+
+    color: white;
+}
+
+/* Animation when hovering over the card */
+
+.recommended-card {
+    overflow: hidden;
+}
+
+.recommended-card img {
+    transition: transform 0.6s ease;
+}
+
+
+/* Zoom the image */
+
+.recommended-card:hover img {
+    transform: scale(1.1);
+}
+
+hr{
+    margin:40px auto;
+}
+
+@media (max-width: 768px) {
+
+    .hero6 .recommended-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media (max-width: 576px) {
+
+    .image-container {
+        height: 350px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    .button {
+        font-size: 9px;
+        padding: 5px 12px;
+    }
+
+    .h {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,309 @@
+/* =========================================================
+   CONTACT.CSS — Page-specific styles for contact.html
+   Depends on: main.css (design tokens + shared components)
+   Owns: hero bg, nav dropdown/mobile toggle, back-to-top,
+         contact info grid, contact form, map embed, light instagram variant
+   ========================================================= */
+
+/* ---------- Page header background (Contact) ---------- */
+.page-header.contact-header {
+    background-image: url("https://picsum.photos/1600/500?grayscale&random=12");
+}
+
+/* ---------- Nav: dropdown + mobile toggle behavior ----------
+.nav-item-dropdown { position: relative; }
+
+.nav-item-dropdown .nav-link i {
+    font-size: 11px;
+    margin-left: 4px;
+    transition: var(--transition-main);
+}
+
+.nav-item-dropdown.open .nav-link i,
+.nav-item-dropdown:hover .nav-link i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    min-width: 180px;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-main);
+    border-radius: var(--radius-md);
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: var(--transition-main);
+    z-index: 10;
+}
+
+.nav-item-dropdown:hover .dropdown-menu,
+.nav-item-dropdown.open .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 20px;
+    font-size: var(--font-size-sm);
+    color: var(--color-heading);
+}
+
+.dropdown-menu li a:hover { color: var(--color-primary); }
+
+.search-toggle {
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.site-header.is-scrolled .search-toggle { color: var(--color-heading); }
+
+@media (max-width: 991px) {
+    .navbar-collapse { display: none; }
+    .navbar-collapse.show { display: block; }
+    .navbar { flex-wrap: wrap; align-items: center; justify-content: space-between; }
+    .navbar-nav { flex-direction: column; align-items: flex-start; gap: 2px; }
+    .dropdown-menu {
+        position: static;
+        opacity: 1; visibility: visible; transform: none;
+        box-shadow: none;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 0 0 20px;
+        transition: var(--transition-main);
+        display: none;
+    }
+    .nav-item-dropdown.open .dropdown-menu {
+        display: block;
+        max-height: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar { display: flex; align-items: center; justify-content: space-between; }
+    .navbar-nav { display: flex; }
+    .navbar-toggler { display: none; }
+} */
+
+/* ---------- Let's Work Together & Contact Layout ---------- */
+.contact-info-section { padding: 100px 0 60px; }
+
+.contact-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contact-info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-heading {
+    font-size: var(--font-size-5xl);
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-detail-item dt {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    margin-bottom: 4px;
+}
+
+.contact-detail-item dd {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-heading);
+    margin: 0;
+}
+
+.contact-detail-item dd a { color: inherit; transition: var(--transition-main); }
+.contact-detail-item dd a:hover { color: var(--color-primary); }
+
+/* ---------- Contact Form Styles ---------- */
+.contact-form-wrapper {
+    background-color: var(--color-white);
+}
+
+.contact-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 14px 18px;
+    background-color: var(--color-bg-gray);
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: var(--font-size-sm);
+    color: var(--color-heading);
+    transition: var(--transition-main);
+    outline: none;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--color-primary);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-main);
+}
+
+.contact-form textarea.form-control {
+    resize: vertical;
+}
+
+.btn-submit {
+    display: inline-block;
+    padding: 14px 36px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: var(--transition-main);
+}
+
+.btn-submit:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+@media (max-width: 991px) {
+    .contact-grid-wrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-form .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- Map ---------- */
+.map-section { padding-top: 0; padding-bottom: 100px; }
+
+.map-wrapper {
+    width: 100%;
+    height: 500px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-main);
+}
+
+.map-wrapper iframe { width: 100%; height: 100%; display: block; }
+
+@media (max-width: 767px) {
+    .map-section { padding-bottom: 60px; }
+    .map-wrapper { height: 360px; }
+}
+
+/* ---------- Instagram strip: light variant used on Contact ---------- */
+.instagram-strip-light .insta-heading {
+    background-color: var(--color-white);
+    padding: 90px 0 50px;
+}
+
+.instagram-strip-light .insta-heading h3 {
+    color: var(--color-heading);
+    font-size: var(--font-size-3xl);
+}
+
+.instagram-strip-light .insta-heading p {
+    color: var(--color-text);
+    margin-top: 8px;
+}
+
+.instagram-strip-light .insta-marquee {
+    background-color: var(--color-white);
+}
+/* ---------- Minimal footer bar ---------- */
+.site-footer-simple { background-color: var(--color-dark-2); padding: 28px 0; }
+
+.footer-simple-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: var(--font-size-sm);
+}
+
+.footer-simple-inner a { color: var(--color-primary); }
+
+.footer-simple-brand {
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+}
+
+.footer-simple-brand span { color: var(--color-primary); }
+
+.footer-simple-social { display: flex; gap: 14px; }
+
+.footer-simple-social a {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+}
+
+.footer-simple-social a:hover { color: var(--color-primary); }
+
+/* ---------- Back to top ---------- */
+.back-to-top {
+    position: fixed;
+    right: 24px; bottom: 24px;
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: var(--transition-main);
+    z-index: 998;
+}
+
+.back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+
+/* ---------- Accessibility: visible focus (quality floor) ---------- */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .insta-track { animation: none; }
+    * { scroll-behavior: auto !important; }
+}
+

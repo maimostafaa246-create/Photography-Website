@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* الحاوي الرئيسي للصور */
+.gallery-container {
+  display: flex; /* بيخلي الصور تترص جنبت بعض في صف واحد */
+  width: 100%;
+  overflow: hidden; /* لمنع ظهور أي شريط تمرير */
+}
+
+/* تنسيق الصور */
+.gallery-container img {
+  flex: 1; /* بيخلي كل الصور تأخد نفس العرض تماماً بالتساوي */
+  height: 250px; /* الارتفاع المناسب للشريط */
+  object-fit: cover; /* بيقص أطراف الصورة لتغطية المساحة بدون تشويه */
+  min-width: 0; /* لمنع انكماش الصور بأسلوب غير مرغوب */
+}
+
+/* حاوية الصورة */
+.instagram-item {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.instagram-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* الطبقة البرتقالية / الحمراء الشفافة */
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(252, 60, 93, 0.85); /* لون القالب الشفاف */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0; /* مخفية في الوضع الطبيعي */
+  transition: opacity 0.3s ease;
+}
+
+/* إظهار الطبقة عند الوقوف بالموس */
+.instagram-item:hover .hover-overlay {
+  opacity: 1;
+}
+
+/* تنسيق الأيقونة والنص */
+.hover-overlay i {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.hover-overlay span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+
+    .hero9 .gallery-container {
+        width: 100%;
+    }
+
+    .hero9 img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero9 .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 576px) {
+
+    .image-container {
+        height: 350px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    .button {
+        font-size: 9px;
+        padding: 5px 12px;
+    }
+
+    .h {
+        font-size: 12px;
+    }
+}
+
+
